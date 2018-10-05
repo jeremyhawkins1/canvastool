@@ -1,0 +1,55 @@
+
+
+.UserArea {
+  grid-area: user;
+  align-self: center;
+  color: $stratus;
+  background-color: $tuxedo;
+  .greeting {
+    text-align: center;
+  }
+
+  .date {
+    font-size: 16pt;
+    font-family: 'Snell Roundhand';
+  }
+
+  .tagline {
+    
+    font-family: Palatino;
+  }
+}
+
+.Banner {
+  grid-area: header;
+  background-color: $iron;
+  height: 70px;
+  .Branding {
+    float: left;
+    }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    height: 100%;
+    li {
+      padding-right: 10px;
+      display: inline-block;
+      height: 100%;
+      button {
+        margin-top: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.boards {
+  grid-area: main;
+}

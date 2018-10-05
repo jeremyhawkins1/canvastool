@@ -1,0 +1,31 @@
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+@font-face {
+  font-family: 'GOTHAM BLACK';
+  src: url('./fonts/Gotham-Black.otf');
+}
+
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url('./fonts/Avenir-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Palatino';
+  src: url('./fonts/Palatino.otf');
+}
+
+@font-face {
+  font-family: 'Snell Roundhand';
+  src: url('./fonts/SnellRoundhand.otf');
+}
+
+html{
+  font-family: 'Avenir Medium';
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'GOTHAM BLACK';
+}

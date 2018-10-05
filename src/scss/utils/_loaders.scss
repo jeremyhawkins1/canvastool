@@ -1,0 +1,23 @@
+
+
+.loading::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid $battleship;
+  border-top-color: $monarch;
+  animation: spinner .95s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
