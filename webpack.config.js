@@ -1,5 +1,6 @@
 const Path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry:    './src/index.js',
@@ -57,21 +58,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'  
-    })
+    }),
+    new Dotenv()
   ],
   devServer: {
     clientLogLevel: 'info',
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
-    },
-    proxy: {
-      '/canvas/api': {
-        target: 'https://hccs.test.instructure.com/api/v1/',
-        pathRewrite: {'^/canvas/api' : ''}
-      }
-    }
   }
 }
 

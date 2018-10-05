@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import parseLinkHeader from 'parse-link-header';
+
 import InfoPanel from './components/InfoPanel';
 import FacultyList from './components/FacultyList';
 
@@ -11,7 +12,7 @@ class App extends Component {
             'sources': {
                 'faculty': 'https://online-03.hccs.edu/apps/canvas/faculty',
                 'canvas-fac': 'https://cors-anywhere.herokuapp.com/https://hccs.test.instructure.com/api/v1/accounts/1/users',
-                'key': ''
+                'key': process.env.CANVAS_TOKEN
             },
             'page': 1,
             'limit': 10,
